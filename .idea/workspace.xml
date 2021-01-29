@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="03ae7c1d-4eb7-414a-9456-8ea244fbf28e" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ngwyu6zQHZ2ofRyNDz8WZYZXNj" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rgc-regression-104-master" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.CreateUser">
+    <configuration name="CreateUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="LegalUsers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestData.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UserLogOn" />
+      <option name="MAIN_CLASS_NAME" value="UserLogOn.CreateUser" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogonUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="LegalUsers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UserLogOn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UserLogOn" />
+      <option name="MAIN_CLASS_NAME" value="UserLogOn.LogonUser" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.CreateUser" />
+        <item itemvalue="TestNG.LogonUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03ae7c1d-4eb7-414a-9456-8ea244fbf28e" name="Default Changelist" comment="" />
+      <created>1611825299333</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611825299333</updated>
+      <workItem from="1611825302351" duration="1687000" />
+      <workItem from="1611827151862" duration="981000" />
+      <workItem from="1611829447491" duration="2265000" />
+      <workItem from="1611832295920" duration="1625000" />
+      <workItem from="1611834480811" duration="1925000" />
+      <workItem from="1611836426532" duration="1085000" />
+      <workItem from="1611839522717" duration="1923000" />
+      <workItem from="1611841464138" duration="1999000" />
+      <workItem from="1611844175394" duration="1892000" />
+      <workItem from="1611846144086" duration="1574000" />
+      <workItem from="1611853472926" duration="2367000" />
+      <workItem from="1611856118371" duration="1662000" />
+      <workItem from="1611857932257" duration="1828000" />
+      <workItem from="1611861124006" duration="1265000" />
+      <workItem from="1611862871263" duration="1789000" />
+      <workItem from="1611864678369" duration="1278000" />
+      <workItem from="1611908903187" duration="672000" />
+      <workItem from="1611912822767" duration="1781000" />
+      <workItem from="1611915532548" duration="2231000" />
+      <workItem from="1611917851482" duration="1789000" />
+      <workItem from="1611919659882" duration="1820000" />
+      <workItem from="1611921497058" duration="1792000" />
+      <workItem from="1611923304927" duration="1863000" />
+      <workItem from="1611925184927" duration="1645000" />
+      <workItem from="1611927072756" duration="1861000" />
+      <workItem from="1611928955460" duration="1285000" />
+      <workItem from="1611940815297" duration="939000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
