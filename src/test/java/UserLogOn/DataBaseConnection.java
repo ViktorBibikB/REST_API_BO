@@ -10,19 +10,11 @@ public class DataBaseConnection {
         Statement myStmt = null;
         ResultSet myRs = null;
 
-        /*
-        String dbUrl = "jdbc:mysql://sho-mysql03-t:3306/web02_billing";
-        String user = "bibik";
-        String pass = "KuVkqyAg2FVku4yK";
-        */
 
         try {
             Properties props = new Properties();
             props.load(new FileInputStream("C:/Users/User/IdeaProjects/LegalUsers/src/SQL_connection_data.properties"));
-
-            String theUser = props.getProperty("user");
-            String thePassword = props.getProperty("pass");
-            String theDburl = props.getProperty("dbUrl");
+            
             // 1. Get a connection to database
             myConn = DriverManager.getConnection(props.getProperty("dbUrl"), props.getProperty("user"), props.getProperty("pass"));
 

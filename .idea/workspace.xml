@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03ae7c1d-4eb7-414a-9456-8ea244fbf28e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/SQL_connection_data.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UserLogOn/DataBaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserLogOn/DataBaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/UserLogOn/DataBaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserLogOn/DataBaseConnection.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -208,7 +205,7 @@
       <workItem from="1613242815809" duration="1082000" />
       <workItem from="1613244634242" duration="2190000" />
       <workItem from="1613247104844" duration="1693000" />
-      <workItem from="1613248913896" duration="272000" />
+      <workItem from="1613248913896" duration="547000" />
     </task>
     <servers />
   </component>
