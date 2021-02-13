@@ -4,6 +4,9 @@ import TestData.TestDataCreateUser;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.ValidatableResponse;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.json.JSONString;
 import org.openqa.selenium.json.Json;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -13,9 +16,10 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static Helpers.GettersSetters.getCreateUserRequestId;
-import static Helpers.GettersSetters.setCreateUserRequestId;
+import static Helpers.GettersSetters.*;
+import static Helpers.Helpers.receiveDecodedJWTAsString;
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.core.StringContains.containsString;
 
 public class CreateUser {
     private TestDataCreateUser createUserLoginData = new TestDataCreateUser();
@@ -30,7 +34,10 @@ public class CreateUser {
     private String eic_x = createUserLoginData.getCreateEIC();
     private String phone = createUserLoginData.getCreatePhone();
 
-    private String create_user_request_id = null;
+    private String create_user_request_id;
+    private String authorizationJWT;
+
+
 
 
 
@@ -60,4 +67,23 @@ public class CreateUser {
         Assert.assertNotNull(getCreateUserRequestId());
     }
 
+    @Test(priority = 1)
+    public void testConfirmCreateUserRequest(){
+        ValidatableResponse response;
+        response = given()
+                .header("X-Application-Key", xAppKey)
+                .when()
+                .post("api/v2/legal/users/confirm/" + getCreateUserRequestId())
+                .then()
+                .assertThat().statusCode(201)
+                .and()
+                .assertThat().body(containsString("\"jwt\""));
+        JSONObject jsonResponse = new JSONObject(response.extract().asString());
+        JSONObject data = jsonResponse.getJSONObject("data");;
+        setAuthJWT(authorizationJWT = data.getString("jwt"));
+        jsonResponse = new JSONObject(receiveDecodedJWTAsString(getAuthJWT()));
+        setDecodedSessionId(jsonResponse.getString("session_id"));
+        setDecodedLogonName(jsonResponse.getString("logon_name"));
+        Assert.assertEquals(getDecodedLogonName(), "02010936@mailinator.com");
+    }
 }

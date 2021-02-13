@@ -19,6 +19,8 @@ public class GettersSetters {
     public static void setCreateUserRequestId(String authCreateUserRequestId) {
 
         createUserRequestId = authCreateUserRequestId;
+        createUserRequestId = createUserRequestId.replace("\"", "");
+
     }
     // AuthJWT
     public static String getAuthJWT() {

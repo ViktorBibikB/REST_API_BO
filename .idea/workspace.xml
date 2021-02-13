@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03ae7c1d-4eb7-414a-9456-8ea244fbf28e" name="Default Changelist" comment="" />
+    <list default="true" id="03ae7c1d-4eb7-414a-9456-8ea244fbf28e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UserLogOn/DataBaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Helpers/GettersSetters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Helpers/GettersSetters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Helpers/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Helpers/Helpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserLogOn/CreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserLogOn/CreateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Helpers/GettersSetters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Helpers/GettersSetters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Helpers/Helpers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Helpers/Helpers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/UserLogOn/CreateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserLogOn/CreateUser.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -14,6 +40,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -24,10 +53,11 @@
   </component>
   <component name="ProjectId" id="1ngwyu6zQHZ2ofRyNDz8WZYZXNj" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rgc-regression-104-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -41,7 +71,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CreateUser">
+  <component name="RunManager" selected="Application.DataBaseConnection">
+    <configuration name="DataBaseConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UserLogOn.DataBaseConnection" />
+      <module name="LegalUsers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UserLogOn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="LegalUsers" />
       <extension name="coverage">
@@ -59,7 +102,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogonUser" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateUser.testConfirmCreateUserRequest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="LegalUsers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UserLogOn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UserLogOn" />
+      <option name="MAIN_CLASS_NAME" value="UserLogOn.CreateUser" />
+      <option name="METHOD_NAME" value="testConfirmCreateUserRequest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateUser.testCreateUserRequest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="LegalUsers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UserLogOn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UserLogOn" />
+      <option name="MAIN_CLASS_NAME" value="UserLogOn.CreateUser" />
+      <option name="METHOD_NAME" value="testCreateUserRequest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogonUser.testGetLegalUserContracts" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="LegalUsers" />
       <extension name="coverage">
         <pattern>
@@ -69,7 +148,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="UserLogOn" />
       <option name="MAIN_CLASS_NAME" value="UserLogOn.LogonUser" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="testGetLegalUserContracts" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -78,8 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DataBaseConnection" />
         <item itemvalue="TestNG.CreateUser" />
-        <item itemvalue="TestNG.LogonUser" />
+        <item itemvalue="TestNG.LogonUser.testGetLegalUserContracts" />
+        <item itemvalue="TestNG.CreateUser.testConfirmCreateUserRequest" />
+        <item itemvalue="TestNG.CreateUser.testCreateUserRequest" />
       </list>
     </recent_temporary>
   </component>
@@ -120,10 +203,34 @@
       <workItem from="1611927072756" duration="1861000" />
       <workItem from="1611928955460" duration="1285000" />
       <workItem from="1611940815297" duration="939000" />
+      <workItem from="1612121656411" duration="1635000" />
+      <workItem from="1612123309072" duration="1774000" />
+      <workItem from="1612125119472" duration="1790000" />
+      <workItem from="1612126924317" duration="854000" />
+      <workItem from="1612128731032" duration="1844000" />
+      <workItem from="1612165154938" duration="899000" />
+      <workItem from="1612183164588" duration="1480000" />
+      <workItem from="1612338798423" duration="600000" />
+      <workItem from="1612437588363" duration="1185000" />
+      <workItem from="1613242815809" duration="1082000" />
+      <workItem from="1613244634242" duration="1591000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

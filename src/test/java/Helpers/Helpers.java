@@ -1,11 +1,6 @@
 package Helpers;
 
 import org.apache.commons.codec.binary.Base64;
-import org.json.JSONObject;
-
-import javax.json.JsonObject;
-
-import static Helpers.GettersSetters.*;
 
 public class Helpers {
 
@@ -17,5 +12,4 @@ public class Helpers {
         System.out.println("JWT Body : " + jwt);
         return jwt;
     }
-
 }
