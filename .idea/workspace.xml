@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03ae7c1d-4eb7-414a-9456-8ea244fbf28e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserLogOn/DataBaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserLogOn/DataBaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL_queries.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Helpers/DataBaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Helpers/PropertiesFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SQL_connection_data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SQL_connection_data.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserLogOn/CreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserLogOn/CreateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserLogOn/DataBaseConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/UserLogOn/CreateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserLogOn/CreateUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/UserLogOn/DataBaseConnection.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +56,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rgc-regression-104-master (2)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\LegalUsers" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -61,13 +75,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DataBaseConnection">
+  <component name="RunManager" selected="TestNG.CreateUser">
     <configuration name="DataBaseConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UserLogOn.DataBaseConnection" />
+      <option name="MAIN_CLASS_NAME" value="Helpers.DataBaseConnection" />
       <module name="LegalUsers" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UserLogOn.*" />
+          <option name="PATTERN" value="Helpers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,7 +110,7 @@
       <module name="LegalUsers" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UserLogOn.*" />
+          <option name="PATTERN" value="Helpers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,7 +128,7 @@
       <module name="LegalUsers" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UserLogOn.*" />
+          <option name="PATTERN" value="Helpers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,7 +146,7 @@
       <module name="LegalUsers" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UserLogOn.*" />
+          <option name="PATTERN" value="Helpers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,8 +162,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DataBaseConnection" />
         <item itemvalue="TestNG.CreateUser" />
+        <item itemvalue="Application.DataBaseConnection" />
         <item itemvalue="TestNG.LogonUser.testGetLegalUserContracts" />
         <item itemvalue="TestNG.CreateUser.testConfirmCreateUserRequest" />
         <item itemvalue="TestNG.CreateUser.testCreateUserRequest" />
@@ -205,7 +219,17 @@
       <workItem from="1613242815809" duration="1082000" />
       <workItem from="1613244634242" duration="2190000" />
       <workItem from="1613247104844" duration="1693000" />
-      <workItem from="1613248913896" duration="547000" />
+      <workItem from="1613248913896" duration="1755000" />
+      <workItem from="1613250722048" duration="1792000" />
+      <workItem from="1613252531413" duration="2095000" />
+      <workItem from="1613254807758" duration="1791000" />
+      <workItem from="1613256614157" duration="664000" />
+      <workItem from="1613337961082" duration="1878000" />
+      <workItem from="1613468919702" duration="1788000" />
+      <workItem from="1613470752356" duration="2201000" />
+      <workItem from="1613474111211" duration="1649000" />
+      <workItem from="1613476155518" duration="1791000" />
+      <workItem from="1613477965275" duration="1264000" />
     </task>
     <servers />
   </component>
