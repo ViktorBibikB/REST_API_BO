@@ -20,21 +20,18 @@ import static org.hamcrest.core.StringContains.containsString;
 
 public class LogonUser {
     private TestDataLogonUser testDataLogonUser = new TestData.TestDataLogonUser();
-    private Date date = new Date();;
-    private SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-    private File uploadedFile_meteringPhoto = new File("D://RemoteWork//APITestData//image.jpg");
-    private File uploadedFile_connectingPhoto = new File("D://RemoteWork//APITestData//image_1.jpg");
+    private ValidatableResponse response;
 
     private String xAppKey = testDataLogonUser.getXAppKey();
     private String logon_name = testDataLogonUser.getLoginName();
     private String device_id = testDataLogonUser.getDeviceId();
     private String access_mode = testDataLogonUser.getAccessMode();
     private String userEDRPOU = testDataLogonUser.getUserEDRPOU();
-    private String authorizationJWT = null;
-    private String accountNumber = null;
-    private String accountEDRPOU = null;
-    private String contractID = null;
-    private String contractNumber = null;
+    protected String authorizationJWT = null;
+    protected String accountNumber = null;
+    protected String accountEDRPOU = null;
+    protected String contractID = null;
+    protected String contractNumber = null;
 
 
     @BeforeClass
@@ -47,7 +44,6 @@ public class LogonUser {
 
     @Test(priority = 0)
     public void testUserAuthorisation(){
-        ValidatableResponse response;
         response = given()
                 .header("X-Application-Key", xAppKey)
                 .param("device_id", device_id)
@@ -68,7 +64,6 @@ public class LogonUser {
 
     @Test(priority = 1)
     public void testGetLegalConsumerByEDRPOU(){
-        ValidatableResponse response;
         response = given()
                 .header("X-Application-Key", xAppKey)
                 .queryParam("edrpou", userEDRPOU)
@@ -88,7 +83,6 @@ public class LogonUser {
 
     @Test(priority = 2)
     public void testGetLegalUserContracts(){
-        ValidatableResponse response;
         response = given()
                 .header("X-Application-Key", xAppKey)
                 .header("X-Session-Id", getDecodedSessionId())
@@ -108,7 +102,6 @@ public class LogonUser {
 
     @Test(priority = 3)
     public void testGetLegalUserAccountingUnits(){
-        ValidatableResponse response;
         response = given()
                 .header("X-Application-Key", xAppKey)
                 .header("X-Session-Id", getDecodedSessionId())

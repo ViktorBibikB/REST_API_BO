@@ -1,5 +1,7 @@
 package Helpers;
 import java.sql.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import static Helpers.PropertiesFile.getDBProperty;
 import static Helpers.PropertiesFile.propertiesFileInputStream;
@@ -7,6 +9,7 @@ import static Helpers.PropertiesFile.propertiesFileInputStream;
 
 public class DataBaseConnection {
 
+    private static final Logger log = LogManager.getLogger(DataBaseConnection.class.getName());
 
     protected static Connection connection = null;
     protected static Statement statement = null;
@@ -17,15 +20,13 @@ public class DataBaseConnection {
 
         public static String selectFromDB(String sqlQuery, String columnName) throws SQLException {
             try {
-                propertiesFileInputStream();
-                connection = DriverManager.getConnection(getDBProperty("dbUrl"), getDBProperty("user"),getDBProperty("pass"));
                 statement = connection.createStatement();
                 resultSet = statement.executeQuery(sqlQuery);
 
                 while (resultSet.next()) {
                     logonName = resultSet.getString(columnName);
                 }
-
+                log.info("Select statement has been processed successfully.");
             }
             catch (Exception exc) {
                 exc.printStackTrace();
@@ -36,16 +37,19 @@ public class DataBaseConnection {
 
         public static void deleteFromDB(String sqlQuery) throws SQLException {
             try {
-                propertiesFileInputStream();
-                connection = DriverManager.getConnection(getDBProperty("dbUrl"), getDBProperty("user"),getDBProperty("pass"));
                 statement = connection.createStatement();
                 int rowsAffected = statement.executeUpdate(sqlQuery);
-
+                log.info("Statement has been deleted from database.");
         }
         catch (Exception exc) {
             exc.printStackTrace();
         }
     }
+        public static void connectToDatabase() throws SQLException {
+            propertiesFileInputStream();
+            connection = DriverManager.getConnection(getDBProperty("dbUrl"), getDBProperty("user"),getDBProperty("pass"));
+            log.info("DataBase connection established.");
+        }
 
         public static void closeBDConnection(){
             try {
@@ -60,6 +64,7 @@ public class DataBaseConnection {
                 if (connection != null) {
                     connection.close();
                 }
+                log.info("DataBase connection closed.");
             } catch (Exception exc) {
                 exc.printStackTrace();
             }
